@@ -1,9 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, RouterLink],
   templateUrl: './footer.component.html',
   //styleUrl: './footer.component.css'
   styleUrl: './../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -11,3 +13,21 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
 }
+/*
+import { Component,input,inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-footer',
+  standalone: true,
+  imports: [CommonModule, RouterLink],
+  templateUrl: './footer.component.html',
+  //styleUrl: './footer.component.css'
+  styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+})
+export class FooterComponent {
+
+}
+
+*/
