@@ -1,1 +1,57 @@
-<p>contatos works!</p>
+
+<div class="container col-xxl-8 px-4 py-5">
+
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6 text-center">
+        <img src="https://raw.githubusercontent.com/ludhill/ileolorum/refs/heads/main/public/logoileolorum.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+          Contatos
+        </h1>
+            <!---- >
+            olorumile@gmail.com
+            <form #emailForm="ngForm" (ngSubmit)="onSubmit(emailForm)">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" ngModel required #email="ngModel">
+                <div *ngIf="email.invalid && email.touched">
+                <small *ngIf="email.errors?.required">O email é obrigatório.</small>
+                <small *ngIf="email.errors?.email">O formato do email é inválido.</small>
+                </div>
+            </div>
+            <button type="submit" [disabled]="emailForm.invalid">Enviar</button>
+            </form>
+
+            <!- --->
+            
+        <p class="lead text-justify font-monospace" style="text-align: justify;">                   
+            <a href="mailto:olorumile@gmail.com">Nos envie um e-mail</a>
+        </p>
+
+        <hr />
+
+        <p class="lead text-justify font-monospace" style="text-align: justify;">                   
+            <a href="https://www.facebook.com/ileolorum/" target="_blank">https://www.facebook.com/ileolorum/</a>
+            <br />
+            <a href="https://www.instagram.com/ileolorum/" target="_blank">https://www.instagram.com/ileolorum/</a>
+        </p>
+
+        <hr />
+
+        <p class="lead text-justify font-monospace" style="text-align: justify;">
+            <a href="tel:+5584981239008">(84) 98123-9008 (Whatsapp)</a>
+        </p>
+
+        <ul class="lead text-justify font-monospace" style="text-align: justify;">
+            <li>
+                Agendamento de consulta de jogo de búzios
+            </li>
+            <li>
+                Agendamento de visitação
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>
