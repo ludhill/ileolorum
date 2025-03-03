@@ -8,7 +8,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
   standalone: true,
   imports: [RouterOutlet, NavigationComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'ileolorum';

@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about-us',
+  selector: 'app-agenda',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.css'
+  templateUrl: './agenda.component.html',
+  styleUrl: './agenda.component.css'
 })
-export class AboutUsComponent {
+export class AgendaComponent {
 
 }
