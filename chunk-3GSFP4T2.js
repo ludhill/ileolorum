@@ -1,0 +1,1 @@
+import{Aa as o,Da as p,Ea as m,U as t,Ya as s,za as a}from"./chunk-ZGOCNUBC.js";var i=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-agenda"]],standalone:!0,features:[m],decls:2,vars:0,template:function(e,r){e&1&&(a(0,"p"),p(1,"agenda works!"),o())},dependencies:[s]})};export{i as AgendaComponent};

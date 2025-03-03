@@ -1,1 +1,0 @@
-import{Ba as s,Ca as p,T as o,Wa as m,xa as n,ya as a}from"./chunk-KWUIOBTM.js";var i=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=o({type:e,selectors:[["app-contatos"]],standalone:!0,features:[p],decls:2,vars:0,template:function(t,r){t&1&&(n(0,"p"),s(1,"contatos works!"),a())},dependencies:[m]})};export{i as ContatosComponent};

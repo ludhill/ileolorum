@@ -1,1 +1,0 @@
-import{Ba as p,Ca as m,T as t,Wa as s,xa as a,ya as o}from"./chunk-KWUIOBTM.js";var i=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-agenda"]],standalone:!0,features:[m],decls:2,vars:0,template:function(e,r){e&1&&(a(0,"p"),p(1,"agenda works!"),o())},dependencies:[s]})};export{i as AgendaComponent};
