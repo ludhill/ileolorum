@@ -7,7 +7,10 @@ import { FormsModule, NgForm } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './contatos.component.html',
-  styleUrl: './contatos.component.css'
+  styleUrls: [
+    './../../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css',
+    './contatos.component.css'
+  ]
 })
 export class ContatosComponent {
 
