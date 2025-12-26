@@ -1,0 +1,315 @@
+/* ==========================================================================
+   1. LAYOUT E CONTAINERS
+   ========================================================================== */
+
+.nav-orixas-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 15px 10px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  /* Remova o justify-content: center; */
+  justify-content: flex-start; /* Garante que comece pelo primeiro item */
+}
+
+/* Para centralizar apenas quando couber na tela */
+@media (min-width: 992px) {
+  .nav-orixas-container {
+    justify-content: center; 
+  }
+}
+
+.nav-orixas-container::-webkit-scrollbar {
+  display: none;
+  /* Esconde scrollbar no Chrome/Safari */
+}
+
+@media (max-width: 768px) {
+  .nav-orixas-container {
+    justify-content: start;
+    /* No mobile, inicia à esquerda para permitir o scroll lateral */
+    padding-left: 10px;
+  }
+}
+
+/* ==========================================================================
+   2. BOTÕES DE NAVEGAÇÃO (SÍMBOLOS)
+   ========================================================================== */
+
+.btn-tab {
+  min-width: 85px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.btn-tab.active {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-tab.active i {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* ==========================================================================
+   3. CARDS DE CÂNTICOS (CIFRAS)
+   ========================================================================== */
+
+.cifra-card {
+  background-color: var(--bg-card) !important;
+  /* Agora o card escurece também */
+  color: var(--texto-principal);
+  border: 1px solid var(--borda);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.cifra-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ==========================================================================
+   4. GUIA DE PERCUSSÃO (INTRO-OGÃ)
+   ========================================================================== */
+
+.intro-ogã {
+  background-color: var(--bg-card) !important;
+  border-left: 5px solid var(--borda) !important;
+}
+
+/* Responsividade do Ritmo: Horizontal/Desktop */
+@media (min-width: 768px) {
+  .intro-ogã {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* OCULTAR BATIDA NA VERTICAL: Prioriza a letra em telas estreitas */
+@media (orientation: portrait) and (max-width: 576px) {
+  .secao-batida {
+    display: none !important;
+  }
+}
+
+.tracking-widest {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 5px;
+  /* Espaço entre círculos de batida */
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   5. TEXTOS E TIPOGRAFIA
+   ========================================================================== */
+
+.texto-yoruba {
+  font-size: 1.15rem;
+  color: var(--texto-suave);
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.texto-portugues {
+  color: var(--texto-suave);
+}
+
+.linha-musical {
+  border-left: 3px solid #f0f0f0;
+  padding-left: 15px;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   6. FOOTER E ANIMAÇÕES
+   ========================================================================== */
+
+.footer-sessao {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #212529;
+  color: white;
+  z-index: 1050;
+  padding: 15px;
+  border-top: 3px solid #ffc107;
+  animation: slideUp 0.3s ease-out;
+}
+
+.legenda-percussao {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: var(--texto-suave);
+}
+
+.legenda-percussao span {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 0 5px;
+  color: var(--texto-suave);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Centralização da Nav */
+.nav-orixas-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .nav-orixas-container {
+    justify-content: start;
+    padding-left: 10px;
+  }
+}
+
+/* Layout do Ritmo: Coluna por padrão (Mobile) */
+.ritmo-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Layout do Ritmo: Linha no Desktop */
+@media (min-width: 768px) {
+  .ritmo-info-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Esconde batida visual se o celular estiver na vertical (Portrait) */
+@media (orientation: portrait) and (max-width: 576px) {
+  .secao-batida {
+    display: none !important;
+  }
+}
+
+.toggle-footer-btn {
+  z-index: 1100;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #ffc107;
+}
+
+.tracking-widest {
+  letter-spacing: 6px;
+  font-family: monospace;
+}
+
+.toggle-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Container Externo para posicionar as setas */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Container de Scroll Atualizado */
+.nav-orixas-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 15px 5px;
+  scroll-behavior: smooth; /* Movimentação suave */
+  scroll-snap-type: x mandatory; /* Faz o botão travar na posição correta */
+  scrollbar-width: none; /* Esconde a barra no Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-orixas-container::-webkit-scrollbar {
+  display: none; /* Esconde a barra no Chrome/Safari */
+}
+
+/* Cada botão se torna um ponto de parada (snap) */
+.btn-tab {
+  flex: 0 0 auto;
+  scroll-snap-align: center; /* Centraliza o botão ao rolar */
+  min-width: 90px;
+  /* ... manter estilos anteriores de borda e raio ... */
+}
+
+/* Botões de Seta */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border: 1px solid var(--borda) !important;
+  background: var(--bg-card);
+  color: var(--texto-principal);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.scroll-btn:hover {
+  background: var(--texto-principal);
+  color: var(--bg-card);
+}
+
+.scroll-btn.prev { left: 0; }
+.scroll-btn.next { right: 0; }
+
+/* Esconder setas em telas muito pequenas onde o touch é melhor */
+@media (max-width: 576px) {
+  .scroll-btn { display: none; }
+}

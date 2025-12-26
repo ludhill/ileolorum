@@ -1,17 +1,34 @@
-<div class="container text-center">
-    <div class="row ">
-        <h1>A Logo do Ilê Olorum</h1>
-        <div class="col">
-              <a href="#" class="text-decoration-none btn">
-                <div class="card img-thumbnail" style="width: 15rem;">
-                    <img src="https://raw.githubusercontent.com/ludhill/ileolorum/refs/heads/main/public/logoileolorum.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Logo</h5>
-                        <p class="card-text d-inline-block text-truncate"  style="max-width: 150px;"> ÍYalaxé Isa de Nanã</p>
-                    </div>
-                </div>
-              </a>
-        </div>
+<div class="container mt-5 pt-5 mb-5 animate-fade-in">
+  <div class="text-center mb-5">
+    <h1 class="fw-bold">Bem-vindo ao Ilê Olorum</h1>
+    <p class="text-muted">Acompanhe nossa caminhada e axé através das redes sociais.</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+      <div class="instagram-wrapper shadow-sm rounded-4 overflow-hidden border">
+        <iframe src="https://www.instagram.com/ileolorum/embed" width="100%" height="650" frameborder="0"
+          scrolling="yes" allowtransparency="true" data-count="9" title="Feed do Instagram Ilê Olorum">
+        </iframe>
+      </div>
+      <div class="text-center mt-3">
+        <a href="https://www.instagram.com/ileolorum" target="_blank" class="btn btn-sm btn-outline-teal rounded-pill"
+          rel="noopener noreferer">
+          <i class="bi bi-instagram me-2"></i>Ver perfil completo
+        </a>
+      </div>
     </div>
+  </div>
+  <div class="position-fixed bottom-0 end-0 m-4 d-flex gap-2" style="z-index: 1100;">
+
+    <button class="btn btn-dark rounded-circle shadow-lg toggle-btn" (click)="toggleTheme()">
+      <i class="bi" [ngClass]="isDarkMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+    </button>
+
+    <button class="btn btn-warning rounded-circle shadow-lg toggle-btn" (click)="exibirFooter = !exibirFooter">
+      <i class="bi" [ngClass]="exibirFooter ? 'bi-x-lg' : 'bi-info-circle'"></i>
+    </button>
+  </div>
+
+  <app-footer *ngIf="exibirFooter"></app-footer>
 </div>
-  

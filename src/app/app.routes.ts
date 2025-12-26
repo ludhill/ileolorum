@@ -13,10 +13,15 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/about-us/about-us.component').then(m => m.AboutUsComponent)
     },
     {
-        path: 'bazar',
-        title: 'bazar',
-        loadComponent: () => import('./pages/bazar/bazar.component').then(m => m.BazarComponent)
+        path: 'xire',
+        title: 'Xirê - Traduções',
+        loadComponent: () => import('./pages/xire/xire.component').then(m => m.XireComponent)
     },
+    // {
+    //     path: 'bazar',
+    //     title: 'bazar',
+    //     loadComponent: () => import('./pages/bazar/bazar.component').then(m => m.BazarComponent)
+    // },
     {
         path: 'agenda',
         title: 'agenda',
@@ -26,5 +31,5 @@ export const routes: Routes = [
         path: 'contatos',
         title: 'contatos',
         loadComponent: () => import('./pages/contatos/contatos.component').then(m => m.ContatosComponent)
-    }
+    },
 ];

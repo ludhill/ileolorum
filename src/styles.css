@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("node_modules/bootstrap-icons/font/bootstrap-icons.css");
+/* Cores Padrão (Light) */
+/* Cores Globais Atualizadas */
+:root {
+  --bg-site: #f8f9fa;
+  --bg-card: #ffffff;
+  --texto-principal: #212529;
+  --texto-suave: #6c757d;
+  --borda: #dee2e6;
+}
+
+/* Tema Escuro Suave (Charcoal) */
+[data-bs-theme="dark"] {
+  --bg-site: #121212;      /* Fundo profundo */
+  --bg-card: #1e1e1e;      /* Card levemente mais claro que o fundo */
+  --texto-principal: #e9ecef;
+  --texto-suave: #adb5bd;
+  --texto-escuro: #adb5bd0c;
+  --borda: #333333;
+}

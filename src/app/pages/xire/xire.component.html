@@ -1,0 +1,77 @@
+<div class="container mt-5 pt-4">
+  <!-- <h2 class="text-center mb-4">Ilê Olorum</h2> -->
+
+  <!-- <div class="nav-orixas-container mb-4">
+    <button *ngFor="let o of orixasNav" class="btn btn-tab shadow-sm" [class.active]="orixaSelecionado === o.filtro"
+      [style.background-color]="orixaSelecionado === o.filtro ? o.cor : 'white'"
+      [style.color]="orixaSelecionado === o.filtro ? (o.nome === 'Oxalá' ? 'black' : 'white') : 'gray'"
+      (click)="aplicarFiltro(o.filtro)">
+      <i [class]="'bi ' + o.icone"></i>
+      <span class="d-none d-md-block">{{ o.nome }}</span>
+    </button>
+  </div> -->
+
+  <div class="nav-wrapper position-relative px-md-5 mb-4">
+    <button class="scroll-btn prev" (click)="scrollNav(-200)">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <div class="nav-orixas-container" #navContainer>
+      <button *ngFor="let o of orixasNav" 
+              class="btn btn-tab shadow-sm"
+              [class.active]="orixaSelecionado === o.filtro"
+              [style.background-color]="orixaSelecionado === o.filtro ? o.cor : 'var(--bg-card)'"
+              [style.color]="orixaSelecionado === o.filtro ? (o.nome === 'Oxalá' ? 'black' : 'white') : 'var(--texto-suave)'"
+              (click)="aplicarFiltro(o.filtro)">
+        <i [class]="'bi ' + o.icone"></i>
+        <span>{{ o.nome }}</span>
+      </button>
+    </div>
+
+    <button class="scroll-btn next" (click)="scrollNav(200)">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+
+  <div *ngFor="let cantico of canticosFiltrados" class="mb-5 cifra-card" [style.border-color]="getCorAtual()">
+
+    <div class="intro-ogã p-3">
+      <div class="mb-2">
+        <h4 [style.color]="getCorAtual()" class="fw-bold mb-0">{{ cantico.titulo }}</h4>
+        <small class="text-muted text-uppercase">{{ cantico.toque }}</small>
+      </div>
+
+      <div class="ritmo-info-grid">
+        <div class="ritmo-item">
+          <small class="text-muted d-block">Voz</small>
+          <span class="fst-italic">{{ cantico.onomatopeia }}</span>
+        </div>
+
+        <div class="ritmo-item secao-batida">
+          <small class="text-muted d-block">Batida Visual</small>
+          <span class="tracking-widest">{{ cantico.ritmo_visual }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3">
+      <div *ngFor="let linha of cantico.linhas" class="mb-3 linha-musical">
+        <p class="texto-yoruba mb-0">{{ linha.y }}</p>
+        <p class="texto-portugues mb-0">{{ linha.p }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="position-fixed bottom-0 end-0 m-4 d-flex gap-2" style="z-index: 1100;">
+
+    <button class="btn btn-dark rounded-circle shadow-lg toggle-btn" (click)="toggleTheme()">
+      <i class="bi" [ngClass]="isDarkMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+    </button>
+
+    <button class="btn btn-warning rounded-circle shadow-lg toggle-btn" (click)="exibirFooter = !exibirFooter">
+      <i class="bi" [ngClass]="exibirFooter ? 'bi-x-lg' : 'bi-info-circle'"></i>
+    </button>
+  </div>
+
+  <app-footer *ngIf="exibirFooter"></app-footer>
+</div>

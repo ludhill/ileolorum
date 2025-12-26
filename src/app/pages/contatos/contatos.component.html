@@ -1,15 +1,16 @@
 <div class="container col-xxl-8 px-4 py-5">
 
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6 text-center">
-        <img src="https://raw.githubusercontent.com/ludhill/ileolorum/refs/heads/main/public/logoileolorum.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6 text-center">
+      <img src="https://raw.githubusercontent.com/ludhill/ileolorum/refs/heads/main/public/logoileolorum.png"
+        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
 
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-          Contatos
-        </h1>
-            <!---- >
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        Contatos
+      </h1>
+      <!---- >
             olorumile@gmail.com
             <form #emailForm="ngForm" (ngSubmit)="onSubmit(emailForm)">
             <div>
@@ -24,25 +25,24 @@
             </form>
 
             <!- --->
-            
-        <p class="lead text-justify font-monospace" style="text-align: justify;">                   
-            <a href="mailto:olorumile@gmail.com" class="text-decoration-none">
-                <i class="bi bi-envelope" style="font-size:5rem;"></i>
-                <br />
-                Nos envie um e-mail
-            </a>
-        </p>
 
-        <hr />
+      <p class="lead text-justify font-monospace" style="text-align: justify;">
+        <a href="mailto:olorumile@gmail.com" class="text-decoration-none">
+          <i class="bi bi-envelope" style="font-size:5rem;"></i>
+          <br />
+          Nos envie um e-mail
+        </a>
+      </p>
 
-        <p class="lead text-justify font-monospace" style="text-align: justify;">                   
-            <a href="https://www.facebook.com/ileolorum/" target="_blank">
-                <i class="bi bi-facebook" style="font-size:5rem;"></i>    
-            </a>
-            <br />
-            <a href="https://www.instagram.com/ileolorum/" target="_blank">
-                <i class="bi bi-instagram" 
-                style="
+      <hr />
+
+      <p class="lead text-justify font-monospace" style="text-align: justify;">
+        <a href="https://www.facebook.com/ileolorum/" target="_blank">
+          <i class="bi bi-facebook" style="font-size:5rem;"></i>
+        </a>
+        <br />
+        <a href="https://www.instagram.com/ileolorum/" target="_blank">
+          <i class="bi bi-instagram" style="
                 font-size:5rem;
                 display: inline-block;
                 text-align: center;
@@ -55,26 +55,38 @@
                 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
                 box-shadow: 0px 3px 10px rgba(0,0,0,.25);
                 "></i>
-            </a>
-        </p>
+        </a>
+      </p>
 
-        <p class="lead text-justify font-monospace" style="text-align: justify;">
-            <a href="tel:+5584981239008"><i class="bi bi-whatsapp text-success" style="font-size:5rem;"></i></a>
-        </p>
-        <h2 class="text-justify font-monospace text-success" style="text-align: justify;">
-            (84) 98123-9008 
-        </h2>
+      <p class="lead text-justify font-monospace" style="text-align: justify;">
+        <a href="tel:+5584981239008"><i class="bi bi-whatsapp text-success" style="font-size:5rem;"></i></a>
+      </p>
+      <h2 class="text-justify font-monospace text-success" style="text-align: justify;">
+        (84) 98123-9008
+      </h2>
 
-        <hr />
-        
-        <ul class="lead text-justify font-monospace" style="text-align: justify;">
-            <li>
-                Agendamento de consulta de jogo de búzios
-            </li>
-            <li>
-                Agendamento de visitação
-            </li>
-        </ul>
-      </div>
+      <hr />
+
+      <ul class="lead text-justify font-monospace" style="text-align: justify;">
+        <li>
+          Agendamento de consulta de jogo de búzios
+        </li>
+        <li>
+          Agendamento de visitação
+        </li>
+      </ul>
     </div>
+  </div>
+  <div class="position-fixed bottom-0 end-0 m-4 d-flex gap-2" style="z-index: 1100;">
+
+    <button class="btn btn-dark rounded-circle shadow-lg toggle-btn" (click)="toggleTheme()">
+      <i class="bi" [ngClass]="isDarkMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+    </button>
+
+    <button class="btn btn-warning rounded-circle shadow-lg toggle-btn" (click)="exibirFooter = !exibirFooter">
+      <i class="bi" [ngClass]="exibirFooter ? 'bi-x-lg' : 'bi-info-circle'"></i>
+    </button>
+  </div>
+
+  <app-footer *ngIf="exibirFooter"></app-footer>
 </div>

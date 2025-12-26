@@ -1,0 +1,61 @@
+.nav-link-custom {
+  text-decoration: none;
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 4px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link-custom:hover, 
+.nav-link-custom.active {
+  color: #212529;
+  border-bottom: 2px solid #ffc107; /* Cor de destaque amarela */
+}
+
+.logo-img {
+  width: 55px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Ajustes para Mobile */
+@media (max-width: 768px) {
+  .nav-link-custom {
+    font-size: 0.85rem;
+    padding: 5px 2px;
+  }
+  .logo-img {
+    width: 45px;
+  }
+}
+
+.nav-link-custom {
+  text-decoration: none !important; /* Remove o sublinhado de link */
+  color: var(--texto-escuro);
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Efeito Hover em tom Verde/Azul com borda interna */
+.nav-link-custom:hover {
+  color: #084d4d;
+  background-color: rgba(20, 184, 166, 0.1); /* Tom esverdeado suave */
+  border: 1px solid #14b8a6;
+  box-shadow: inset 0 0 8px rgba(20, 184, 166, 0.2); /* Sombra interna */
+}
+
+/* Link Ativo */
+.active-link {
+  color: #0d9488 !important;
+  background-color: rgba(20, 184, 166, 0.05);
+  box-shadow: inset 0 0 5px rgba(20, 184, 166, 0.1);
+}

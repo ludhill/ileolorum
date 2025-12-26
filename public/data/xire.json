@@ -1,0 +1,121 @@
+[
+  {
+    "orixa": "Exu",
+    "nacao": "Ketu",
+    "momento": "Saudação",
+    "titulo": "Egbarabo Ago Mojuba Ra",
+    "toque": "Vamunha",
+    "ritmo_visual": "● . ● . ● ● .",
+    "onomatopeia": "Tum..Pa-Pa-Tum",
+    "linhas": [
+      { "y": "Egba rà bó ago mojuba rà", "p": "Tenho fé e peço licença para louvá-lo em minha casa" },
+      { "y": "Egba Kose", "p": "Tenho fé, amém." },
+      { "y": "E mó dé ko e ko", "p": "Nossa casa está limpa. Proteja a nossa terra" },
+      { "y": "Lè gbálè èsù loná", "p": "Seu poder exu, limpa o caminho" }
+    ]
+  },
+  {
+    "orixa": "Ogum",
+    "nacao": "Ketu",
+    "momento": "Louvação",
+    "titulo": "Ogun Onire o",
+    "toque": "Aguerê",
+    "ritmo_visual": "● ○ ● ● | ● ○ ● ●",
+    "onomatopeia": "Tum-Tá-Tum-Tum",
+    "linhas": [
+      { "y": "Ògún onirè o a koro Onire re gbé de", "p": "Ogun Onire, pedimos que traga suas dádivas para este lugar e para nós" },
+      { "y": "Aáké Ogun Onire ore gbé de", "p": "Ogun Onire, seu machado atrai forças para nós" },
+      { "y": "Ògún se kó re nde se kó re", "p": "Ogun, corte e nos ensine a atrair e cortar" },
+      { "y": "E pá ní òbe Ògún pá ní obé", "p": "Sua faca mata, Ogun, sua faca mata" }
+    ]
+  },
+  {
+    "orixa": "Oxóssi",
+    "nacao": "Ketu",
+    "momento": "Saudação",
+    "titulo": "Farahàn rere Fibó",
+    "toque": "Aguerê",
+    "ritmo_visual": "● ○ ● ● | ● ○ ● ●",
+    "onomatopeia": "Tum-Tá-Tum-Tum",
+    "linhas": [
+      { "y": "Farahàn rere Fibó", "p": "Osóòsi Fibó venha nos cobrir com sua bondade" },
+      { "y": "Ode Fibó farahàn lewa kosè", "p": "Oxossi, encubra-nos com sua bondade e beleza, amém" },
+      { "y": "Omo ode", "p": "Filho do caçador" }
+    ]
+  },
+  {
+    "orixa": "Oxumaré",
+    "nacao": "Ketu",
+    "momento": "Saudação",
+    "titulo": "Òsunmarè lelé mo rí",
+    "toque": "Bravun",
+    "ritmo_visual": "● ○ ● . ● ○ ● .",
+    "onomatopeia": "Tum-Tá..Tum-Tá",
+    "linhas": [
+      { "y": "Òsunmarè lelé mo rí Òsunmarè", "p": "Oxumarê encontra-se andando no chão. É preciso saber encontrá-lo" },
+      { "y": "Lelé mo rí rà ba ta", "p": "Andando sobre o chão, tenha cuidado para não pisá-lo" },
+      { "y": "Ódí náà léwà", "p": "Ele é teimoso, mas também é belo" },
+      { "y": "Léwà léwà e", "p": "Ele é belo, belo" }
+    ]
+  },
+  {
+    "orixa": "Omolu",
+    "nacao": "Ketu",
+    "momento": "Saudação",
+    "titulo": "Dagò lu nà",
+    "toque": "Opanijé",
+    "ritmo_visual": "● . . . ● . . .",
+    "onomatopeia": "Tum....... Tum.......",
+    "linhas": [
+      { "y": "Dagò lu nà ke wa Saworo", "p": "Dê-nos licença para tocar o Saworo para que nos acuda" },
+      { "y": "Dagò lelé", "p": "Pedimos licença humildemente" },
+      { "y": "Omolu a fá rà we we", "p": "Omolu, abençoe as nossas cabeças raspadas e nos livre das doenças" },
+      { "y": "Fá rà fá rà fá ro", "p": "Cobre nossas cabeças raspadas e abençoadas por vós" }
+    ]
+  },
+  {
+    "orixa": "Oxum",
+    "nacao": "Ketu",
+    "momento": "Louvação",
+    "titulo": "Ye, ye, ye o",
+    "toque": "Ijexá",
+    "ritmo_visual": "● . ○ . ● . ○ .",
+    "onomatopeia": "Tum... Tá... Tum... Tá...",
+    "linhas": [
+      { "y": "Ye, ye, ye, ye, ye o", "p": "A elogiamos, elogiamos..." },
+      { "y": "Oro mi wá", "p": "Traga riqueza para nós" },
+      { "y": "Nù àse tori e fò", "p": "A força de suas águas lava e limpa tudo" },
+      { "y": "Yìn se kó-jùlo Iyagba o", "p": "Glorificamos a grande mãe que nos cria" }
+    ]
+  },
+  {
+    "orixa": "Nanã",
+    "nacao": "Ketu",
+    "momento": "Saudação",
+    "titulo": "Yìn Nàná yò",
+    "toque": "Sató",
+    "ritmo_visual": "● . ● . ● ● . .",
+    "onomatopeia": "Tum..Pa..Tum",
+    "linhas": [
+      { "y": "Yìn Nàná yò", "p": "Nanã fica feliz ao ser glorificada" },
+      { "y": "O lù obó", "p": "Tocamos para homenageá-la" },
+      { "y": "Nana Yò", "p": "Nanã fica feliz" },
+      { "y": "A rìn kú ma oun rè", "p": "Para todos nós que caminhamos sempre em direção à morte" }
+    ]
+  },
+  {
+    "orixa": "Oxalá",
+    "nacao": "Ketu",
+    "momento": "Saudação",
+    "titulo": "E rìn lè wá",
+    "toque": "Igbin",
+    "ritmo_visual": "● . . . ● . . .",
+    "onomatopeia": "Tum....... Tum.......",
+    "linhas": [
+      { "y": "E rìn lè wá", "p": "Sua energia se aproxima de nós" },
+      { "y": "A ba wá okàn", "p": "Ela vem de encontro ao nosso coração" },
+      { "y": "E lè dùn se ìpadé siré", "p": "Sua energia torna a nossa festa agradável" },
+      { "y": "Koró lè koró lè Bàbá Ifá", "p": "Bàbá Ifá, traga sua energia a este lugar" }
+    ]
+  }
+]

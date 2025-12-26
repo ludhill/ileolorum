@@ -1,54 +1,30 @@
-<br /> 
-<br />
-<hr class="my-5" />
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light opacity-75" style="justify-self: center; border-radius: 3px; ">
-  <div class="container-fluid">
-    <a class="nav-link btn btn-outline-secondary navbar-brand d-block d-md-none" routerLink="">
-      <img src="https://raw.githubusercontent.com/ludhill/ileolorum/refs/heads/main/public/logoileolorum64x64.png" class="img-fluid" />
-    </a>
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm py-2">
+  <div class="container d-flex justify-content-center">
+    
+    <ul class="navbar-nav d-flex flex-row align-items-center gap-3 gap-md-5">
+      
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-secondary" routerLink="/about-us" routerLinkActive="active">O Ilê Olorum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-secondary" routerLink="/xire" routerLinkActive="active">Xirê</a>
+      </li>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-lg-0 ">
-        <li class="nav-item align-self-center">
-          <h4>
-            <a class="nav-link btn btn-outline-secondary" routerLink="about-us">O IlÊ Olorum</a>
-          </h4>
-        </li>
-        <li class="nav-item align-self-center">
-          <h4>
-            <a class="nav-link btn btn-outline-secondary" routerLink="/bazar">Bazar</a>
-          </h4>
-        </li>
-        <li class="nav-item align-self-center">
-          <a class="nav-link btn btn-outline-secondary" routerLink="">
-            <img src="https://raw.githubusercontent.com/ludhill/ileolorum/refs/heads/main/public/logoileolorum64x64.png" class="img-fluid" />
-          </a>
-        </li>
-        <li class="nav-item align-self-center">
-          <h4>
-            <a class="nav-link btn btn-outline-secondary" routerLink="/agenda">Agenda </a>
-          </h4>
-        </li>
-        <li class="nav-item align-self-center">
-          <h4>
-            <a class="nav-link btn btn-outline-secondary" routerLink="/contatos">Contatos</a>
-          </h4>
-        </li>
-      </ul>
-    </div>
-  </div> 
-</nav>
-<!--
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+      <li class="nav-item px-2 px-md-4">
+        <a class="logo-link" routerLink="/">
+          <img src="https://raw.githubusercontent.com/ludhill/ileolorum/refs/heads/main/public/logoileolorum64x64.png" 
+               alt="Logotipo oficial do Ilê Olorum" 
+               class="logo-img">
+        </a>
+      </li>
 
-  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      open
-    </div>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-secondary" routerLink="/agenda" routerLinkActive="active">Agenda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-secondary" routerLink="/contatos" routerLinkActive="active">Contatos</a>
+      </li>
+    </ul>
+
   </div>
--->
-<router-outlet/>
+</nav>
